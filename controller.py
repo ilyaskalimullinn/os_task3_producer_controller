@@ -57,6 +57,7 @@ def handler(signal, frame):
     os.kill(pid2, 15)
     exit()
 signal.signal(10, handler)
+signal.signal(2, handler)
 
 
 while True:
