@@ -32,5 +32,5 @@ if __name__ == "__main__":
     sleep_time = 1
     generator = RandomGenerator()
     for line in generator.generate_lines(N):
-        print(line)
+        print(line, flush=True)
         time.sleep(sleep_time)
